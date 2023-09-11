@@ -15,7 +15,12 @@ body {
 	color: $font-color;
 	ul {
 		list-style-image: linear-gradient(0deg, white, $link-color);
+		padding-right: 20px;
 		line-height: 3.6rem;
+		li {
+			// list 間距
+			padding-left: 20px;
+		}
 	}
 	a {
 		text-decoration: none;
@@ -31,56 +36,45 @@ body {
 }
 
 // londing動畫
-.sk-double-bounce {
-	width: 40px;
-	height: 40px;
-	position: relative;
-	margin: 40px auto;
-}
 
-.sk-double-bounce .sk-child {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	background-color: #ffb908;
-	opacity: 0.6;
-	position: absolute;
+.loading-wrapper {
+	position: fixed;
 	top: 0;
 	left: 0;
-	-webkit-animation: sk-doubleBounce 2s infinite ease-in-out;
-	animation: sk-doubleBounce 2s infinite ease-in-out;
+	width: 100%;
+	height: 100%;
+	background: #f9f346;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.sk-double-bounce .sk-double-bounce2 {
-	-webkit-animation-delay: -1s;
-	animation-delay: -1s;
+.loader {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
 }
 
-@keyframes sk-doubleBounce {
-	0%,
-	100% {
-		-webkit-transform: scale(0);
-		transform: scale(0);
-	}
-
-	50% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
+.loading-img1 {
+	opacity: 0;
+	animation: fadeIn 0.2s ease-in-out 0s 1 forwards;
 }
 
-@keyframes sk-doubleBounce {
-	0%,
-	100% {
-		-webkit-transform: scale(0);
-		transform: scale(0);
-	}
-
-	50% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
+.loading-img2 {
+	opacity: 0;
+	animation: fadeIn 0.2s ease-in-out 0.5s 1 forwards;
 }
+.loading-img3 {
+	opacity: 0;
+	animation: fadeIn 0.2s ease-in-out 1s 1 forwards;
+}
+.loading-img4 {
+	opacity: 0;
+	animation: fadeIn 0.2s ease-in-out 1.5s 1 forwards;
+}
+// londing動畫結束
 
 // 動畫
 // 由左到右
@@ -94,27 +88,6 @@ body {
 		opacity: 1;
 	}
 }
-
-.loading-wrapper {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #f9f346;
-	z-index: 9999;
-}
-
-.loading {
-	position: absolute;
-	width: 80px;
-	height: 80px;
-	top: 50%;
-	left: 50%;
-	margin-top: -15px;
-	margin-left: -15px;
-}
-// londing動畫結束
 
 // 不顯示
 .display-none {
@@ -246,29 +219,17 @@ body {
 	margin: 0px auto;
 }
 
-.single_about i {
-	width: 95px;
-	height: 95px;
-	border: 2px solid #9b4c8bc6;
-	line-height: 85px;
-	border-radius: 50%;
-	text-align: center;
-	color: #9b4c8bc6;
-	margin: 0 auto;
-}
-
 .single_about {
 	display: block;
 	text-align: center;
+	h3 {
+		margin: 15px 0px;
+	}
+	& .main_about_area {
+		overflow: hidden;
+	}
 }
 
-.single_about h3 {
-	margin: 15px 0px;
-}
-
-.main_about_area {
-	overflow: hidden;
-}
 .accordion-header {
 	button {
 		color: $font-color;
@@ -286,12 +247,28 @@ body {
 	}
 }
 
-.accordion-body img {
-	width: 100%;
-	height: 450px;
-	border-radius: 25px;
-	object-position: center;
-	object-fit: cover;
+.accordion-body {
+	h2 {
+		text-align: center;
+		margin: 20px 0px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: 25px;
+		object-position: center;
+		object-fit: cover;
+	}
+}
+
+#drink {
+	ul {
+		columns: 2;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .skill_img img {

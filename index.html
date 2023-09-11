@@ -26,13 +26,16 @@
 </head>
 
 <body>
-    <!-- ==== loading ==== -->
+    <!-- ==== 等待動畫 ==== -->
     <div class="loading-wrapper">
-        <div class="loading sk-double-bounce">
-            <div class="sk-child sk-double-bounce1"></div>
-            <div class="sk-child sk-double-bounce2"></div>
+        <div class="loader row">
+            <img src="/images/cat-icon-1.png" class="loading-img1"></img>
+            <img src="/images/cat-icon-2.png" class="loading-img2"></img>
+            <img src="/images/cat-icon-3.png" class="loading-img3"></img>
+            <img src="/images/cat-icon-4.png" class="loading-img4"></img>
         </div>
     </div>
+    <!-- ==== 等待動畫結束 ==== -->
     <!-- === end === -->
 
 
@@ -57,11 +60,12 @@
                         <a class="nav-link mx-2" href="#about">關於我們</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#service">服務</a>
+                        <a class="nav-link mx-2" href="#adoption">小天使介紹</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#Project">產品</a>
+                        <a class="nav-link mx-2" href="#menu">菜單</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="#team">團隊</a>
                     </li>
@@ -103,8 +107,8 @@
                                             href="#new">最新消息</a></li>
                                     <li class="nav-item"><a class="nav-link" target="_self" href="#about">關於我們</a>
                                     </li>
-                                    <li class="nav-item"><a class="nav-link" target="_self" href="#service">服務</a>
-                                    <li class="nav-item"><a class="nav-link" target="_self" href="#Project">產品</a>
+                                    <li class="nav-item"><a class="nav-link" target="_self" href="#menu"></a>
+                                    <li class="nav-item"><a class="nav-link" target="_self" href="#adoption">小天使介紹</a>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" target="_self" href="#team">團隊</a>
                                     </li>
@@ -129,7 +133,7 @@
         </div>
         <div class="row mt-5 head_title wow transform-left">
             <div class="col-md-2">
-                <img src="images/wing.svg" alt="" width="100" height="100" class="circle-img">
+                <img src="images/store-1.png" class="circle-img">
             </div>
             <div class="col-md-3">
                 <h2>GuardianAngels</h2>
@@ -140,7 +144,6 @@
                 <h5 class="mb-4">每一隻動物，都是上天派來的天使。</h5>
                 <p>
                     每個生命都值得被尊重和珍視<br />
-
                 </p>
             </div>
         </div>
@@ -165,7 +168,6 @@
                 <img src="images/cat-4.png" alt="" width="100" height="100" class="circle-img">
             </div>
             <div class="col-md-3">
-                <!-- <h2>GuardianAngels</h2> -->
                 <h2>邀請您</h2>
             </div>
 
@@ -179,15 +181,41 @@
             </div>
         </div>
     </section>
+    <!-- 店家資訊 -->
+    <div class="container py-5">
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <h1 class="intro_skill_title mb-3 wow fadeInUp">店家資訊</h1>
+                <p>
+                    為那些無家可歸的浪浪提供溫暖的家，同時提供一個溫馨的環境，活潑的浪浪，真心製作的餐點，傳達給每一位守護者，將愛心和關懷分享給更多人。
+                </p>
+                <!-- 地址 -->
+                <div class="col-lg-10">
+                    地址:
+                    <p>台北市大安區忠孝東路四段216巷2弄1號</p>
+                </div>
+                <div class="col-lg-10">
+                    電話:
+                    <p>(02)22832222</p>
+                    歡迎來電預約
+                </div>
+
+                <!-- 引入google地圖 -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703508821434!2d121.5348683150068!3d25.042868483971!2m3!1f0!2f39.99999857731442!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346820f1b0b0b6d9%3A0x2b0b0b0b0b0b0b0b!2z5Y-w5YyX5biC5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1629788570329!5m2!1szh-TW!2stw"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-lg-6 wow fadeInUp">
+                <div class="skill_img px-5">
+                    <img src="images/cafe.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
+    <!-- 店家資訊 結束 -->
 
-
-    <!-- ====================== About Section End ======================= -->
-
-
-    <!-- ====================== Service Section ======================= -->
-    <section id="service" class="service colorsbg">
+    <!-- ====================== 菜單  ======================= -->
+    <section id="menu" class="service colorsbg">
         <div class="container">
             <div class="px-4">
                 <div class="row">
@@ -195,11 +223,11 @@
                         <div class="head_title my-3 pt-3 wow fadeInUp">
                             <div class="row py-5">
                                 <div class="col-md-4">
-                                    <h2>服務</h2>
+                                    <h2>菜單</h2>
                                 </div>
                                 <div class="col-md-8">
                                     <p>
-                                        為那些無家可歸的浪浪提供溫暖的家，同時提供一個溫馨的環境，活潑的浪浪，真心製作的餐點，傳達給每一位守護者，將愛心和關懷分享給更多人。我們相信，每個天使守護者都有一個美好的故事，每個家庭都有一個機會來擁抱一個浪浪的生命。
+                                        為那些無家可歸的浪浪提供溫暖的家，同時提供一個溫馨的環境，活潑的浪浪，真心製作的餐點，傳達給每一位守護者，將愛心和關懷分享給更多人。
                                     </p>
                                 </div>
                             </div>
@@ -213,7 +241,7 @@
                                             class="circle-img">
                                         <h3>主食</h3>
                                         <p>吃飽喝足才有力氣陪小天使</p>
-                                        <a href="#collapseOne">➤ 查看更多</a>
+                                        <a href="#stapleFood">➤ 查看更多</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -221,6 +249,7 @@
                                         <img src="images/drinks.jpg" alt="" width="100" height="100" class="circle-img">
                                         <h3>飲料</h3>
                                         <p>炎熱的下午，來一杯甜甜的果汁最消暑!</p>
+                                        <a href="#drink">➤ 查看更多</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -239,158 +268,149 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <hr>
                         </div>
+                        <!-- 菜單手風琴 -->
                         <div class="accordion " id="menu">
+                            <!-- 主食 -->
                             <div class="accordion-item ">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        data-bs-target="#stapleFood" aria-expanded="true" aria-controls="stapleFood">
                                         ➤ 主食
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                <div id="stapleFood" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#menu">
-                                    <div class=" row accordion-body">
+                                    <div class="row accordion-body d-flex justify-content-center">
                                         <div class=col-lg-4>
                                             <img src="images/spaghetti.jpg" alt="">
                                         </div>
-                                        <div class=col-lg-3>
-                                            <h2>Pasta</h2>
+                                        <div class=col-lg-2>
+                                            <h2>Pasta 義式</h2>
                                             <ul>
                                                 <li>香烤雞胸肉</li>
                                                 <li>蒜香九層塔</li>
                                                 <li>海鮮吃到吐</li>
                                                 <li>肉醬滿足你</li>
-                                                <li>起司會變胖</li>
                                                 <li>青菜超健康</li>
                                                 <li>奶油非常香</li>
                                             </ul>
                                         </div>
-                                        <div class=col-lg-4>
-                                            <img src="images/spaghetti.jpg" alt="">
+                                        <div class="col-lg-5 row">
+                                            <div class="col-lg-6">
+                                                <img src="images/casserole.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h2>Risotto 焗烤</h2>
+                                                <ul>
+                                                    <li>海鮮吃到吐</li>
+                                                    <li>肉醬滿足你</li>
+                                                    <li>奶油非常香</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h2>Burger 漢堡</h2>
+                                                <ul>
+                                                    <li>滿滿雞腿肉</li>
+                                                    <li>超大塊豬排</li>
+                                                    <li>貓咪愛吃魚</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="images/hamburger.jpg" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- 飲料 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        data-bs-target="#drink" aria-expanded="false" aria-controls="drink">
                                         ➤ 飲料
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                <div id="drink" class="accordion-collapse collapse" aria-labelledby="drink"
                                     data-bs-parent="#menu">
-                                    <div class="row accordion-body ">
-                                        <div class=col-lg-6>
-                                            Sed eu nunc id lacus bibendum volutpat vel a odio. Curabitur eu eros eget
-                                            tortor
-                                            pretium euismod ut eu justo. Proin
-                                            laoreet condimentum magna id tincidunt. Proin ultricies, sapien sed pharetra
-                                            ullamcorper, erat dui mollis mi, vitae
-                                            viverra leo tellus sit amet dui. Nulla vestibulum ante molestie felis
-                                            accumsan
-                                            tempor.
-                                            <br><br>
-                                            laoreet condimentum magna id tincidunt. Proin ultricies, sapien sed pharetra
-                                            ullamcorper, erat dui mollis mi, vitae
-                                            viverra leo tellus sit amet dui. Nulla vestibulum ante molestie felis
-                                            accumsantempor.laoreet condimentum magna id tincidunt. Proin ultricies,
-                                            sapien sed pharetrllamcorper, erat dui mollis mi, vitae
-                                            viverra leo tellus sit amet dui. Nulla vestibulum ante molestie felis
-                                            accumsan
-                                            tempor.
+                                    <div class="row accordion-body  justify-content-center">
+                                        <div class="col-lg-4 row">
+                                            <h2>Tea</h2>
+                                            <div class="col-lg-12">
+                                                <ul>
+                                                    <li>紅茶拿鐵</li>
+                                                    <li>錫蘭紅茶</li>
+                                                    <li>黑糖鮮奶</li>
+                                                    <li>濃情可可</li>
+                                                    <li>蜂蜜拿鐵</li>
+                                                    <li>翡翠風情</li>
+                                                </ul>
+                                                <div class="col-lg-12">
+                                                    <img src="images/milktea.jpg">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class=col-lg-6>
-                                            <img src="images/erfewf.jpg" alt="">
+                                        <div class="col-lg-4 row">
+                                            <div class="col-lg-12">
+                                                <img src="images/drinks.jpg">
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <h2>Soda</h2>
+                                                <ul>
+                                                    <li>香橙鳳梨</li>
+                                                    <li>甜美櫻桃</li>
+                                                    <li>夏季水果</li>
+                                                    <li>青檸時光</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-4 row">
+                                            <h2>Coffee</h2>
+                                            <div class="col-lg-12">
+                                                <ul>
+                                                    <li>經典美式</li>
+                                                    <li>濃香拿鐵</li>
+                                                    <li>卡布奇諾</li>
+                                                    <li>密西西里</li>
+                                                    <li>衣索比亞</li>
+                                                    <li>瓜地馬拉</li>
+                                                    <li>焦糖瑪奇朵</li>
+                                                    <li>創意漂浮</li>
+                                                    <li>貓貓拉花</li>
+                                                    <li>耶加雪菲</li>
+                                                    <li>深焙曼特寧</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <img src="images/coffee.jpg">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- 菜單手風琴 結束 -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Prograss Bar -->
-        <div class="container py-5">
-            <div class="row mt-5">
-                <div class="col-lg-6">
-                    <h1 class="intro_skill_title mb-3 wow fadeInUp">About Our Studio</h1>
-                    <p>Sed eu nunc id lacus bibendum volutpat vel a odio. Curabitur eu eros
-                        eget tortor pretium euismod ut eu justo.
-                        Proin laoreet condimentum magna id tincidunt. Proin ultricies,
-                        sapien sed pharetra ullamcorper, erat dui mollis mi,
-                        vitae viverra leo tellus sit amet dui. Nulla vestibulum ante
-                        molestie felis accumsan tempor.</p>
-                    <h4 class="progress_title mt-5 py-3">Our Service Skills</h4>
-                    <div class="about_skills">
-                        <div class="skill_item">
-                            <div class="skill_header">
-                                <h6 class="skill_title mb-2">Photography</h6>
-                                <div class="progress mb-5" role="progressbar" aria-label="Default striped example"
-                                    aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar progress-bar-striped bg-secondary" style="width: 88%">88%
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill_item">
-                                <div class="skill_header">
-                                    <h6 class="skill_title">Fashion Photography</h6>
-                                    <div class="progress mb-5" role="progressbar" aria-label="Default striped example"
-                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar progress-bar-striped bg-secondary" style="width: 75%">
-                                            75%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill_item">
-                                <div class="skill_header">
-                                    <h6 class="skill_title">Wedding Videography</h6>
-                                    <div class="progress mb-5" role="progressbar" aria-label="Default striped example"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar progress-bar-striped bg-secondary" style="width: 80%">
-                                            80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill_item">
-                                <div class="skill_header">
-                                    <h6 class="skill_title">Video Editing</h6>
-                                    <div class="progress mb-5" role="progressbar" aria-label="Default striped example"
-                                        aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar progress-bar-striped bg-secondary" style="width: 93%">
-                                            93%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp">
-                    <div class="skill_img px-5">
-                        <img src="images/222.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Prograss Bar End -->
+
+
         <hr>
         </div>
     </section><!-- =========== Service Section End =========== -->
 
 
-    <!-- ======================= Project Section ===================== -->
-    <section id="Project" class="gallery_area">
+    <!-- ======================= 領養區塊===================== -->
+    <section id="adoption" class="gallery_area">
         <div class="container">
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-6">
                     <div class="section_title text-center wow fadeInUp">
                         <h1 class="title">待認養的小天使</h1>
-                        <p>每隻小天使都活潑可愛，正在等帶牠的守護者，歡迎來店陪伴</p>
-                    </div> <!-- section title -->
+                        <p>每隻小天使都活潑可愛，正在等待牠的守護者，歡迎來店陪伴</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -440,7 +460,7 @@
             </div>
         </div>
     </section>
-    <!-- ======================= Project Section End ===================== -->
+    <!-- ======================= 領養結束 ===================== -->
 
 
     <!-- ================== Team Section ================= -->
@@ -585,44 +605,44 @@
                 <div class="col-lg-6">
                     <div class="contact-img wow fadeInUp" data-wow-delay=".5s">
                         <img src="
-                        images/denys.jpg" alt="">
+                        images/cat-13.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="section-title">
-                        <h1 class="wow fadeInUp" data-wow-delay=".2s">Get In Touch</h1>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consetetur
-                            sadipscing
-                            elitr, sed diam nonumy eirmod tempor</p>
+                        <h1 class="wow fadeInUp" data-wow-delay=".2s">連絡我們</h1>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">有任何有關領養資訊、來店反饋都可以聯絡我們，也非常歡迎志工小天使加入</p>
+                        <em>我們會在三個工作天內回覆您!</em>
                     </div>
                     <div class="contact-wrapper wow fadeInUp" data-wow-delay=".2s">
                         <form action="#" method="POST" id="contact-form" class="contact-form">
                             <div class="row">
                                 <div class="mb-3 col-lg-6">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Fill name">
+                                    <label for="name" class="form-label">姓名</label>
+                                    <input type="text" class="form-control" id="name">
                                 </div>
                                 <div class="col-lg-6 mb-3">
-                                    <label for="email" class="form-label">E-mail</label>
+                                    <label for="email" class="form-label">信箱</label>
                                     <div class="input-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Fill e-mail">
+                                        <input type="email" class="form-control" id="email">
                                         <span class="input-group-text">@gmail.com</span>
                                     </div>
                                 </div>
                                 <div class="mb-3 col-lg-6">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Subject">
+                                    <label for="subject" class="form-label">主題</label>
+                                    <input type="text" class="form-control" id="name">
                                 </div>
                                 <div class="mb-3 col-lg-6">
-                                    <label for="phone" class="form-label">Tel</label>
+                                    <label for="phone" class="form-label">電話
+                                    </label>
                                     <input type="tel" class="form-control" id="phone" maxlength="10">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="reply" class="form-label">Message</label>
+                                <label for="reply" class="form-label">訊息</label>
                                 <textarea class="form-control" id="reply" rows="5"></textarea>
                             </div>
-                            <button type="button" class="btn btn-secondary">Submit</button>
+                            <button type="button" class="btn btn-secondary">發送</button>
                     </div>
                     </form>
                 </div>

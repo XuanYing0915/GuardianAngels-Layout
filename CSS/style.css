@@ -12,7 +12,12 @@ body {
 html ul,
 body ul {
   list-style-image: linear-gradient(0deg, white, #f39513);
+  padding-right: 20px;
   line-height: 3.6rem;
+}
+html ul li,
+body ul li {
+  padding-left: 20px;
 }
 html a,
 body a {
@@ -29,45 +34,46 @@ body h2 {
   text-shadow: rgba(255, 185, 8, 0.5098039216) 2px 2px 3px;
 }
 
-.sk-double-bounce {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  margin: 40px auto;
-}
-
-.sk-double-bounce .sk-child {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #ffb908;
-  opacity: 0.6;
-  position: absolute;
+.loading-wrapper {
+  position: fixed;
   top: 0;
   left: 0;
-  animation: sk-doubleBounce 2s infinite ease-in-out;
+  width: 100%;
+  height: 100%;
+  background: #f9f346;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sk-double-bounce .sk-double-bounce2 {
-  animation-delay: -1s;
+.loader {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes sk-doubleBounce {
-  0%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
+.loading-img1 {
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in-out 0s 1 forwards;
 }
-@keyframes sk-doubleBounce {
-  0%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
+
+.loading-img2 {
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in-out 0.5s 1 forwards;
 }
+
+.loading-img3 {
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in-out 1s 1 forwards;
+}
+
+.loading-img4 {
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in-out 1.5s 1 forwards;
+}
+
 @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
@@ -78,26 +84,6 @@ body h2 {
     opacity: 1;
   }
 }
-.loading-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f9f346;
-  z-index: 9999;
-}
-
-.loading {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  top: 50%;
-  left: 50%;
-  margin-top: -15px;
-  margin-left: -15px;
-}
-
 .display-none {
   display: none;
 }
@@ -230,27 +216,14 @@ body h2 {
   margin: 0px auto;
 }
 
-.single_about i {
-  width: 95px;
-  height: 95px;
-  border: 2px solid rgba(155, 76, 139, 0.7764705882);
-  line-height: 85px;
-  border-radius: 50%;
-  text-align: center;
-  color: rgba(155, 76, 139, 0.7764705882);
-  margin: 0 auto;
-}
-
 .single_about {
   display: block;
   text-align: center;
 }
-
 .single_about h3 {
   margin: 15px 0px;
 }
-
-.main_about_area {
+.single_about .main_about_area {
   overflow: hidden;
 }
 
@@ -269,14 +242,27 @@ body h2 {
   color: #714910;
 }
 
+.accordion-body h2 {
+  text-align: center;
+  margin: 20px 0px;
+}
 .accordion-body img {
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 25px;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#drink ul {
+  -moz-columns: 2;
+       columns: 2;
+}
+#drink img {
+  width: 100%;
+  height: 100%;
 }
 
 .skill_img img {
