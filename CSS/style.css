@@ -33,6 +33,11 @@ body h2 {
   color: #f39513;
   text-shadow: rgba(255, 185, 8, 0.5098039216) 2px 2px 3px;
 }
+html em,
+body em {
+  font-size: 12px;
+  color: #f39513;
+}
 
 .loading-wrapper {
   position: fixed;
