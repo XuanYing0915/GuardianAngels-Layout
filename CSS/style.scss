@@ -370,7 +370,11 @@ body {
 	}
 	& .widget-wrapper .footer-widget {
 		margin-bottom: 45px;
-
+		h3 {
+			margin-bottom: 35px;
+			color: #fff;
+			margin-top: 10px;
+		}
 		& .socials {
 			display: flex;
 			align-items: center;
@@ -406,12 +410,6 @@ body {
 	color: rgba(255, 255, 255, 0.8);
 	margin-bottom: 30px;
 	padding-right: 60px;
-}
-
-.footer .widget-wrapper .footer-widget h3 {
-	margin-bottom: 35px;
-	color: #fff;
-	margin-top: 10px;
 }
 
 .footer .widget-wrapper .footer-widget .links {
